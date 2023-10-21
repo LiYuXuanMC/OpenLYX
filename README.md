@@ -4,6 +4,16 @@ Leaked by LiYuXuan
 
 Hacked by 黄国文#1337
 
+Logger-Dev
+
+Description
+
+A RUNTIME INJECTION CLIENT
+
+Announcement
+
+Nobody can stop the devlopment of Logger except ourselves！ Never Give Up Even Under Cracking！
+
 Projects:
 - [CraterVM混淆器](CraterVM)
 - [EAC反作弊](EnsembleAntiCheat)

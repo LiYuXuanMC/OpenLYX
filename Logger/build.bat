@@ -1,0 +1,1 @@
+start /wait cmd /c "gradlew build --offline"

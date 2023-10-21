@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="sources">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="imgui">
+      <UniqueIdentifier>{a82cba23-9de0-45c2-b1e3-2eb1666702de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logger">
+      <UniqueIdentifier>{0045cfca-7d2c-4808-a2e9-706998d553b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logger\utils">
+      <UniqueIdentifier>{90798818-c000-405f-a8ac-d88bd2f0e5cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logger\bases">
+      <UniqueIdentifier>{9876fb70-2ba7-4e85-96f6-b5643b98be10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logger\resource">
+      <UniqueIdentifier>{2d3903fc-b652-431d-9ff8-1d67d99bc830}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logger\windows">
+      <UniqueIdentifier>{07008fec-9acd-44eb-8a5f-d4713e637e6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logger\windows\login">
+      <UniqueIdentifier>{95d8b4a3-a9a3-4972-a395-c27791cc682e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logger\windows\login\login_components">
+      <UniqueIdentifier>{ae2d60b6-d7eb-450e-9720-cc04a9866ddb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logger\windows\login\launcher_components">
+      <UniqueIdentifier>{712930a5-5a74-42d4-a53a-59f431010804}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logger\windows\login\home_components">
+      <UniqueIdentifier>{9bb08aa9-aca3-4130-9046-df5f3b6176e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logger\windows\login\injector_components">
+      <UniqueIdentifier>{a1576d21-1059-4213-9099-5203d4e56f9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logger\windows\login\injector_components\process_components">
+      <UniqueIdentifier>{d7b5cbfa-890c-431f-b7fa-fa413bac575b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logger\windows\login\injector_components\prgs_components">
+      <UniqueIdentifier>{967ba6d7-773c-404d-823d-8ae43a9f4e8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="themida">
+      <UniqueIdentifier>{7dae61bc-f899-4b89-a0e0-85fb1bef0cb4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\imgui.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\imgui_demo.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\imgui_draw.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\imgui_widgets.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\backends\imgui_impl_win32.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\imgui_tables.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\backends\imgui_impl_opengl3.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="animation.h">
+      <Filter>logger\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Fonts.cpp">
+      <Filter>logger\bases</Filter>
+    </ClCompile>
+    <ClCompile Include="Logger.cpp">
+      <Filter>logger</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginWindow.cpp">
+      <Filter>logger\windows\login</Filter>
+    </ClCompile>
+    <ClCompile Include="injector.cpp">
+      <Filter>logger\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Button.cpp">
+      <Filter>logger\windows\login\login_components</Filter>
+    </ClCompile>
+    <ClCompile Include="GroupBox.cpp">
+      <Filter>logger\windows\login\login_components</Filter>
+    </ClCompile>
+    <ClCompile Include="TextBox.cpp">
+      <Filter>logger\windows\login\login_components</Filter>
+    </ClCompile>
+    <ClCompile Include="TextDisplay.cpp">
+      <Filter>logger\windows\login\login_components</Filter>
+    </ClCompile>
+    <ClCompile Include="Module.cpp">
+      <Filter>logger\bases</Filter>
+    </ClCompile>
+    <ClCompile Include="TabControl.cpp">
+      <Filter>logger\windows\login\home_components</Filter>
+    </ClCompile>
+    <ClCompile Include="PageButton.cpp">
+      <Filter>logger\windows\login\home_components</Filter>
+    </ClCompile>
+    <ClCompile Include="AccountGroup.cpp">
+      <Filter>logger\windows\login\home_components</Filter>
+    </ClCompile>
+    <ClCompile Include="NewsGroup.cpp">
+      <Filter>logger\windows\login\home_components</Filter>
+    </ClCompile>
+    <ClCompile Include="NewsComponent.cpp">
+      <Filter>logger\windows\login\home_components</Filter>
+    </ClCompile>
+    <ClCompile Include="TextButton.cpp">
+      <Filter>logger\windows\login\home_components</Filter>
+    </ClCompile>
+    <ClCompile Include="ListBox.cpp">
+      <Filter>logger\windows\login\launcher_components</Filter>
+    </ClCompile>
+    <ClCompile Include="VersionItem.cpp">
+      <Filter>logger\windows\login\launcher_components</Filter>
+    </ClCompile>
+    <ClCompile Include="LeftGroupBox.cpp">
+      <Filter>logger\windows\login\injector_components</Filter>
+    </ClCompile>
+    <ClCompile Include="ProgressBar.cpp">
+      <Filter>logger\windows\login\injector_components\prgs_components</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessItem.cpp">
+      <Filter>logger\windows\login\injector_components\process_components</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\imconfig.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\imgui.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\imgui_internal.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\backends\imgui_impl_win32.h">
+      <Filter>sources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\backends\imgui_impl_opengl3.h">
+      <Filter>sources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\backends\imgui_impl_opengl3_loader.h">
+      <Filter>sources</Filter>
+    </ClInclude>
+    <ClInclude Include="render.h">
+      <Filter>logger\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="ComponentBase.h">
+      <Filter>logger\bases</Filter>
+    </ClInclude>
+    <ClInclude Include="Fonts.h">
+      <Filter>logger\bases</Filter>
+    </ClInclude>
+    <ClInclude Include="InterSemiBold.h">
+      <Filter>logger\resource</Filter>
+    </ClInclude>
+    <ClInclude Include="GeologicaThin.h">
+      <Filter>logger\resource</Filter>
+    </ClInclude>
+    <ClInclude Include="GeologicaRegular.h">
+      <Filter>logger\resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Logger.h">
+      <Filter>logger</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowGui.h">
+      <Filter>logger\bases</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginWindow.h">
+      <Filter>logger\windows\login</Filter>
+    </ClInclude>
+    <ClInclude Include="injector.h">
+      <Filter>logger\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="TextDisplay.h">
+      <Filter>logger\windows\login\login_components</Filter>
+    </ClInclude>
+    <ClInclude Include="Button.h">
+      <Filter>logger\windows\login\login_components</Filter>
+    </ClInclude>
+    <ClInclude Include="GroupBox.h">
+      <Filter>logger\windows\login\login_components</Filter>
+    </ClInclude>
+    <ClInclude Include="TextBox.h">
+      <Filter>logger\windows\login\login_components</Filter>
+    </ClInclude>
+    <ClInclude Include="Module.h">
+      <Filter>logger\bases</Filter>
+    </ClInclude>
+    <ClInclude Include="TabControl.h">
+      <Filter>logger\windows\login\home_components</Filter>
+    </ClInclude>
+    <ClInclude Include="PageButton.h">
+      <Filter>logger\windows\login\home_components</Filter>
+    </ClInclude>
+    <ClInclude Include="AccountGroup.h">
+      <Filter>logger\windows\login\home_components</Filter>
+    </ClInclude>
+    <ClInclude Include="News.h">
+      <Filter>logger\bases</Filter>
+    </ClInclude>
+    <ClInclude Include="NewsGroup.h">
+      <Filter>logger\windows\login\home_components</Filter>
+    </ClInclude>
+    <ClInclude Include="NewsComponent.h">
+      <Filter>logger\windows\login\home_components</Filter>
+    </ClInclude>
+    <ClInclude Include="TextButton.h">
+      <Filter>logger\windows\login\home_components</Filter>
+    </ClInclude>
+    <ClInclude Include="ListBox.h">
+      <Filter>logger\windows\login\launcher_components</Filter>
+    </ClInclude>
+    <ClInclude Include="Versions.h">
+      <Filter>logger\bases</Filter>
+    </ClInclude>
+    <ClInclude Include="VersionItem.h">
+      <Filter>logger\windows\login\launcher_components</Filter>
+    </ClInclude>
+    <ClInclude Include="LeftGroupBox.h">
+      <Filter>logger\windows\login\injector_components</Filter>
+    </ClInclude>
+    <ClInclude Include="ProgressBar.h">
+      <Filter>logger\windows\login\injector_components\prgs_components</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessItem.h">
+      <Filter>logger\windows\login\injector_components\process_components</Filter>
+    </ClInclude>
+    <ClInclude Include="ThemidaSDK.h">
+      <Filter>themida</Filter>
+    </ClInclude>
+    <ClInclude Include="SecureEngineCustomVMs.h">
+      <Filter>themida</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\xX11o\Downloads\httplib.h">
+      <Filter>sources</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\misc\natvis\imgui.natvis">
+      <Filter>sources</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="SecureEngineSDK32.lib">
+      <Filter>themida</Filter>
+    </Library>
+    <Library Include="SecureEngineSDK64.lib">
+      <Filter>themida</Filter>
+    </Library>
+  </ItemGroup>
+</Project>

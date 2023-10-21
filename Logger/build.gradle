@@ -1,0 +1,71 @@
+buildscript {
+
+    repositories {
+        jcenter()
+        mavenLocal()
+        mavenCentral()
+
+        maven {
+            name = "forge"
+            url = "http://files.minecraftforge.net/maven"
+        }
+
+        maven {
+            url = "https://plugins.gradle.org/m2"
+        }
+
+    }
+
+    dependencies {
+        classpath "net.minecraftforge.gradle:ForgeGradle:2.1-SNAPSHOT"
+    }
+}
+
+
+
+apply plugin: "net.minecraftforge.gradle.forge"
+apply plugin: "java"
+
+repositories {
+    
+    mavenLocal()
+    mavenCentral()
+    jcenter()
+    
+
+}
+
+sourceCompatibility = targetCompatibility = '1.8'
+compileJava.options.encoding = 'UTF-8'
+archivesBaseName = 'Logger'
+
+minecraft {
+    version = "1.8.9-11.15.1.2318-1.8.9"
+    runDir = "run"
+    mappings = "stable_22"
+}
+
+dependencies {
+    compileOnly 'org.projectlombok:lombok:1.18.26'
+    annotationProcessor 'org.projectlombok:lombok:1.18.26'
+
+    testCompileOnly 'org.projectlombok:lombok:1.18.26'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.26'
+
+    compileOnly fileTree(dir: 'libs', include: ['*.jar'])
+}
+
+configurations {
+    external
+    compile.extendsFrom external
+}
+
+tasks.withType(JavaCompile) {
+    // Try to turn them all off automatically
+    options.compilerArgs << '-Xlint:none'
+    options.compilerArgs << '-nowarn' // same as '-Xlint:none'
+}
+
+reobfJar.onlyIf {!project.hasProperty("skipReobf")}
+extractRangemapReplacedMain.onlyIf {!project.hasProperty("skipReobf")}
+retromapReplacedMain.onlyIf {!project.hasProperty("skipReobf")}

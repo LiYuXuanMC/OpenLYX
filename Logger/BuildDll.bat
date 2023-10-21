@@ -1,0 +1,1 @@
+java -jar HydrogenBuilder-1.0-SNAPSHOT-all.jar -c debug.yml

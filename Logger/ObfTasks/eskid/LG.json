@@ -1,0 +1,167 @@
+{
+  "input": "./Logger-rename-native.jar",
+  "output": "./Logger-rename-native-obf.jar",
+  "libraries": [],
+  "global_exclusions": ["al/logger/mt"],
+  "hard_exclusions": [],
+  "corrupt_output_stream": false,
+  "corrupt_class_names": false,
+  "obfuscation": {
+    "LoaderSupport": {
+      "Enable":false,
+      "Checksums": false
+    },
+    "AntiDebugTransformer": {
+      "Enable":  false
+    },
+    "MergeMethodsTransformer": {
+      "Enable":  false
+    },
+    "PackagerTransformer": {
+      "Enable": false,
+      "Loader_name": "net/minecraft/client/main/Main",
+      "Origin_main_class": "example/Main"
+    },
+    "TrashClassesTransformer": {
+      "Enable": false,
+      "GenClasses": 3.0,
+      "FakeUsage": true,
+      "Prefix": ""
+    },
+    "RenameMembersTransformer": {
+      "Enable":  false,
+      "Rename_methods": true,
+      "Rename_fields": true,
+      "Rename_classes":  true,
+      "Remove_packages": false,
+      "Remove_mixins_packages": false,
+      "Reset_dictionary": false,
+      "BreakZip_contact": false,
+      "Internal_dictionary": "Alphabet",
+      "Prefix": "ShellSock/",
+      "Mixin_config": "",
+      "Mixin_package": "shellsock",
+      "Dump_mapping": true,
+      "Excluded_classes": [],
+      "Excluded_methods": ["RLoad"],
+      "Excluded_fields": []
+    },
+    "StringEncryptionTransformer": {
+      "Enable": true,
+      "Type": "FAST",
+      "AntiTemper": false
+    },
+    "InvokeDynamicTransformer": {
+      "Enable": true,
+      "Excluded_classes": [],
+      "Invalid_name": false
+    },
+    "ScrambleTransformer": {
+      "Enable": false,
+      "Aggressive_overload": false,
+      "Redirect_method": true,
+      "Redirect_fields": true,
+      "Get_fields": true,
+      "Get_non_static": false,
+      "Set_fields": true,
+      "Set_non_static": false
+    },
+    "HideCodeTransformer": {
+      "Enable": false
+    },
+    "MiscellaneousObfuscationTransformer": {
+      "Enable": false,
+      "Random_exceptions": true,
+      "Massive_signature": false,
+      "Massive_source": false,
+      "Push_transient": true,
+      "Push_varargs": true,
+      "Variable_descriptor": true,
+      "Variable_descriptor_list": [
+        "QHJA",
+        "QHJB",
+        "QHJC",
+        "ClassLoaderF",
+        "ClassLoaderu",
+        "ClassLoaderc",
+        "ClassLoaderk",
+        "ClassLoaderU",
+        "Ljava/lang/Integer;",
+        "Ljava/lang/String;"
+      ],
+      "Invalid_annotation": false,
+      "Duplicate_variables": true,
+      "Excluded_classes": []
+    },
+    "CrasherTransformer": {
+      "Enable": false,
+      "AntiASM": true,
+      "Anti_decompile": true,
+      "BadInvokedDynamic": true,
+      "InvalidZip": false,
+      "HeavyProtectMethod": false
+    },
+    "NumberObfuscationTransformer": {
+      "Enable": false,
+      "Execute_twice": false,
+      "ShiftNumber": false
+    },
+    "ControlFlowTransformer": {
+      "Enable": true,
+      "Confusing_switch": false,
+      "SwitchMaxStack": 0.0,
+      "Fake_jump": false,
+      "TryCatch_type": "HEAVY",
+      "Flow_severity": 1.0,
+      "TryCatch_severity": 1.0,
+      "Excluded_classes": ["com/netease/mc/modSS/NativeMain",
+	  "com/netease/mc/modSS/LoadClient",
+	  "com/netease/mc/modSS/ShellSock",
+	  "com/netease/mc/modSS/utils/GLUProjection",
+	  "com/netease/mc/modSS/mod/mods/CLIENT/CommandGetter",
+	  "com/netease/mc/modSS/mod/mods/VISUAL/NameTags"],
+      "Jump_return": false,
+      "Replace_goto": false,
+      "Trash_code": false,
+      "Block_splitter": false
+    },
+    "ShuffleMembersTransformer": {
+      "Enable": false
+    },
+    "WaterMarkTransformer": {
+      "Enable": false,
+      "Message": "PROTECTED BY EST"
+    }
+  },
+  "optimization": {
+    "NoOperationTransformer": {
+      "Enable": false
+    },
+    "StaticStringCallTransformer": {
+      "Enable": false
+    },
+    "DeadCodeTransformer": {
+      "Enable": false
+    },
+    "RedundantTransformer": {
+      "Enable": false
+    },
+    "ConstantTransformer": {
+      "Enable": false
+    }
+  },
+  "shrinking": {
+    "MetadataRemoveTransformer": {
+      "Enable": false
+    },
+    "UnusedMemberTransformer": {
+      "Enable": false,
+      "Remove_classes": false,
+      "Remove_methods": false,
+      "Remove_fields": false
+    },
+    "InnerClassTransformer": {
+      "Enable": false
+    }
+  }
+}

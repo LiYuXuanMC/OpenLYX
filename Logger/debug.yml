@@ -1,0 +1,36 @@
+tasks:
+    - name: "Print"
+      args:
+        - "Start build Logger: Debug"
+    - name: "Execute"
+      args:
+        - "./gradlew.bat clean -offline"
+    - name: "Execute"
+      args:
+        - "cmd /c start /wait cmd /c \"gradlew build --offline -PskipReobf\""
+    - name: "CheckFile"
+      args:
+        - "./build/libs/Logger.jar"
+    - name: "Execute"
+      args:
+        - "msbuild ./LoggerNative/LoggerNative.sln -target:Clean"
+    - name: "Export"
+      args:
+        - "./build/libs/Logger.jar"
+        - "./LoggerNative/export_debug.h"
+    - name: "Execute"
+      args:
+        - "cmd /c del ./LoggerNative/classes.h"
+    - name: "CheckForge"
+      args:
+        - "./build/libs/Logger.jar"
+    - name: "PackJar"
+      args:
+        - "./build/libs/Logger.jar"
+        - "./LoggerNative/classes.h"
+    - name: "CheckFile"
+      args:
+        - "./LoggerNative/classes.h"
+    - name: "Execute"
+      args:
+        - "cmd /c msbuild ./LoggerNative/LoggerNative.vcxproj -p:Configuration=Debug -p:Platform=x64 -maxcpucount:4"

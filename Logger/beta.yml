@@ -1,0 +1,127 @@
+tasks:
+    - name: "Print"
+      args:
+        - "Start build Logger: Beta"
+    - name: "Execute"
+      args:
+        - "cmd /c rd \".\\ObfTasks\\native\\cpp\" /s /q"
+    - name: "Execute"
+      args:
+        - "./gradlew.bat clean -offline"
+    - name: "Execute"
+      args:
+        - "cmd /c del ./LoggerNative/classes.h"
+    - name: "Execute"
+      args:
+        - "cmd /c del .\\Logger-rename.jar"
+    - name: "Execute"
+      args:
+        - "cmd /c del .\\Logger-rename-obf.jar"
+    - name: "Execute"
+      args:
+        - "cmd /c del .\\Logger-rename-obf-native.jar"
+    - name: "Execute"
+      args:
+        - "cmd /c del ./LoggerNative/native_library_static.lib"
+    - name: "Execute"
+      args:
+        - "cmd /c del ./ObfTasks/proguard/mapping.txt"
+    - name: "Execute"
+      args:
+        - "cmd /c del ./dictionary.txt"
+    - name: "Execute"
+      args:
+        - "msbuild ./LoggerNative/LoggerNative.sln -p:Configuration=Release -target:Clean"
+    - name: "CheckFile"
+      args:
+        - "./ObfTasks/libraries/rt.jar"
+    - name: "Execute"
+      args:
+        - "cmd /c start /wait cmd /c \"gradlew build --offline -PskipReobf\""
+    - name: "CheckFile"
+      args:
+        - "./build/libs/Logger.jar"
+    - name: "RemoveClass"
+      args:
+        - "./build/libs/Logger.jar"
+        - "al/logger/loader/ForgeMod"
+    - name: "GenDictionary"
+      args:
+        - "20"
+        - "C;c;F;f;"
+        - '2000'
+        - "./dictionary.txt"
+    - name: "Execute"
+      args:
+        - "java -jar ./ObfTasks/proguard/lib/proguard.jar @./ObfTasks/proguard/rename.pro -dontwarn"
+    - name: "CheckFile"
+      args:
+        - "./Logger-rename.jar"
+    - name: "Execute"
+      args:
+        - "java -jar ./ObfTasks/zkm/ZKM.jar ./ObfTasks/zkm/script.txt"
+    - name: "CheckFile"
+      args:
+        - "./Logger-rename.jar"
+    - name: "Execute"
+      args:
+        - "cmd /c ren .\\Logger-rename.jar Logger-rename-obf.jar"
+    - name: "Execute"
+      args:
+        - "cmd /c ren .\\Logger-rename.jar.BACKUP Logger-rename.jar"
+    - name: "CheckFile"
+      args:
+        - "./Logger-rename-obf.jar"
+    - name: "Execute"
+      args:
+        - "cmd /c start /wait cmd /c \"java -jar ./ObfTasks/native/obfuscator.jar ./Logger-rename-obf.jar ./ObfTasks/native/cpp al/logger -a\""
+    - name: "CheckFile"
+      args:
+        - "./ObfTasks/native/cpp/Logger-rename-obf.jar"
+    - name: "Execute"
+      args:
+        - "cmd /c copy .\\ObfTasks\\native\\cpp\\Logger-rename-obf.jar .\\Logger-rename-obf-native.jar"
+    - name: "Execute"
+      args:
+        - "cmd /c \"cd .\\ObfTasks\\native\\cpp\\cpp && cmake .\""
+    - name: "Execute"
+      args:
+        - "cmd /c \"cd .\\ObfTasks\\native\\cpp\\cpp && cmake --build . --config Release\""
+    - name: "CheckFile"
+      args:
+        - "./Logger-rename-obf-native.jar"
+    - name: "CheckFile"
+      args:
+        - "./ObfTasks/native/cpp/cpp/build/lib/Release/native_library_static.lib"
+    - name: "Execute"
+      args:
+        - "cmd /c copy .\\ObfTasks\\native\\cpp\\cpp\\build\\lib\\Release\\native_library_static.lib .\\LoggerNative\\native_library_static.lib"
+    - name: "CheckFile"
+      args:
+        - "./Logger-rename-obf-native.jar"
+    - name: "Export"
+      args:
+        - "./Logger-rename-obf-native.jar"
+        - "./LoggerNative/export.h"
+    - name: "RemoveAnnotation"
+      args:
+        - "./Logger-rename-obf-native.jar"
+    - name: "CheckForge"
+      args:
+        - "./Logger-rename-obf-native.jar"
+    - name: "PackJar"
+      args:
+        - "./Logger-rename-obf-native.jar"
+        - "./LoggerNative/classes.h"
+    - name: "CheckFile"
+      args:
+        - "./LoggerNative/classes.h"
+    - name: "Execute"
+      args:
+        - "cmd /c msbuild ./LoggerNative/LoggerNative.vcxproj -p:Configuration=Release -p:Platform=x64 -maxcpucount:4"
+    - name: "CheckFile"
+      args:
+        - "./LoggerNative/x64/Release/LoggerNative.dll"
+    - name: "Print"
+      args:
+        - "WARN!  Beta branch build succeed. PLEASE ADD ANOTHER PROTECT MANUALLY"

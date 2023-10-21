@@ -1,0 +1,73 @@
+# eclipse
+bin
+*.launch
+.settings
+.metadata
+.classpath
+.project
+
+# idea
+out
+*.ipr
+*.iws
+*.iml
+.idea
+.shelf
+
+# gradle
+build
+.gradle
+
+# other
+eclipse
+run
+
+# minecraft
+logs
+
+#Debug agent
+DebugNative/.vs
+DebugNative/x64
+
+#Logger Native
+LoggerNative/x64
+LoggerNative/.vs
+LoggerNative/classes.h
+LoggerNative/classes.bin
+LoggerNative/native_library_static.lib
+LoggerNative/export.h
+LoggerNative/export_debug.h
+
+#Obfuscate
+ObfTasks/native/cpp
+ObfTasks/libraries/maven
+ObfTasks/libraries/rt.jar
+ObfTasks/zkm/ZKM_LoadLog.txt
+ObfTasks/zkm/ZKM_log.txt
+ObfTasks/zkm/ZKM_O.ser
+ObfTasks/zkm/ZKM_WarningLog.txt
+ObfTasks/zkm/ZKM_EX.ser
+ObfTasks/zkm/ZKM_SO.ser
+ObfTasks/zkm/ZKM_TO.ser
+ZKM_LoadLog.txt
+ZKM_log.txt
+ZKM_O.ser
+ZKM_WarningLog.txt
+ZKM_EX.ser
+ZKM_SO.ser
+ZKM_TO.ser
+ZKM_TrimLog.txt
+mapping.txt
+ChangeLog.txt
+dictionary.txt
+Logger-rename.jar
+Logger-rename-native.jar
+Logger-rename-native-obf.jar
+Logger-rename-obf.jar
+Logger-rename-obf-native.jar
+Logger-Beta.dll
+eskid.log
+
+#Injector
+LoggerInjector/examples/.vs
+LoggerInjector/examples/Debug

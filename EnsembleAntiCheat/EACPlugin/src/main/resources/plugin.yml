@@ -1,0 +1,6 @@
+name: EAC-Core
+version: 1.0.0
+author: Hillo
+api-version: 1.8.8
+main: pub.ensemble.hillo.EACCore
+description: Ensemble AntiCheat Plugin

@@ -1,0 +1,38 @@
+# eclipse
+bin
+*.launch
+.settings
+.metadata
+.classpath
+.project
+
+# idea
+out
+*.ipr
+*.iws
+*.iml
+.idea
+
+# gradle
+build
+.gradle
+
+# other
+eclipse
+run
+EACLocalServer/logs
+EACDLL/.vs
+EACDLL/Debug
+ObfTasks/native/cpp
+EACDLL/x64
+EACDLL/x86
+EACDLL/export.h
+EACDLL/Release
+
+EACDLL/native_library_static_64.lib
+EACDLL/native_library_static_86.lib
+EnsembleAntiCheat-1.0-eskid-native.jar
+EnsembleAntiCheat-1.0-eskid.jar
+eskid.log
+EACDLL.dll
+EACDLL_x86.dll

@@ -1,0 +1,134 @@
+tasks:
+    - name: "Print"
+      args:
+        - "Start build EnsembleAntiCheat"
+    - name: "Print"
+      args:
+        - "有面对困难的勇气,才能看见成功的曙光"
+    - name: "Execute"
+      args:
+        - "cmd /c rd \".\\ObfTasks\\native\\cpp\" /s /q"
+    - name: "Execute"
+      args:
+        - "./gradlew.bat clean -offline"
+    - name: "Execute"
+      args:
+        - "cmd /c del .\\EnsembleAntiCheat-1.0-eskid.jar"
+    - name: "Execute"
+      args:
+        - "cmd /c del .\\EnsembleAntiCheat-1.0-eskid-native.jar"
+    - name: "Execute"
+      args:
+        - "cmd /c del .\\EACDLL\\native_library_static_86.lib"
+    - name: "Execute"
+      args:
+        - "cmd /c del .\\EACDLL\\native_library_static_64.lib"
+    - name: "Execute"
+      args:
+        - "msbuild ./EACDLL/EACDLL.sln -p:Configuration=Release -target:Clean"
+    - name: "Execute"
+      args:
+        - "cmd /c start /wait cmd /c \"gradlew build --offline\""
+    - name: "CheckFile"
+      args:
+        - "./build/libs/EnsembleAntiCheat-1.0.jar"
+    - name: "Execute"
+      args:
+        - "cmd /c java -Xms512m -Xmx4048m -jar -noverify ./ObfTasks/eskid/eskid.jar ./ObfTasks/eskid/LG.json"
+    - name: "CheckFile"
+      args:
+        - "./EnsembleAntiCheat-1.0-eskid.jar"
+    - name: "Execute"
+      args:
+        - "cmd /c start /wait cmd /c \"java -jar ./ObfTasks/native/obfuscator.jar ./EnsembleAntiCheat-1.0-eskid.jar ./ObfTasks/native/cpp pub/ensemble/hillo -a\""
+    - name: "CheckFile"
+      args:
+        - "./ObfTasks/native/cpp/EnsembleAntiCheat-1.0-eskid.jar"
+    - name: "Execute"
+      args:
+         - "cmd /c copy .\\ObfTasks\\native\\cpp\\EnsembleAntiCheat-1.0-eskid.jar .\\EnsembleAntiCheat-1.0-eskid-native.jar"
+    - name: "Execute"
+      args:
+        - "cmd /c \"cd .\\ObfTasks\\native\\cpp\\cpp && cmake -A x64 .\""
+    - name: "Execute"
+      args:
+        - "cmd /c \"cd .\\ObfTasks\\native\\cpp\\cpp && cmake --build . --config Release\""
+    - name: "CheckFile"
+      args:
+        - "./EnsembleAntiCheat-1.0-eskid-native.jar"
+    - name: "CheckFile"
+      args:
+        - "./ObfTasks/native/cpp/cpp/build/lib/Release/native_library_static.lib"
+    - name: "Execute"
+      args:
+        - "cmd /c copy .\\ObfTasks\\native\\cpp\\cpp\\build\\lib\\Release\\native_library_static.lib .\\EACDLL\\native_library_static_64.lib"
+    - name: "Execute"
+      args:
+        - "cmd /c rd \".\\ObfTasks\\native\\cpp\\cpp\\CMakeFiles\" /s /q"
+    - name: "Execute"
+      args:
+        - "cmd /c rd \".\\ObfTasks\\native\\cpp\\cpp\\native_library_static.dir\" /s /q"
+    - name: "Execute"
+      args:
+        - "cmd /c rd \".\\ObfTasks\\native\\cpp\\cpp\\x64\" /s /q"
+    - name: "Execute"
+      args:
+        - "cmd /c rd \".\\ObfTasks\\native\\cpp\\cpp\\build\" /s /q"
+    - name: "Execute"
+      args:
+        - "cmd /c del .\\ObfTasks\\native\\cpp\\cpp\\CMakeCache.txt"
+    - name: "Execute"
+      args:
+        - "cmd /c del .\\ObfTasks\\native\\cpp\\cpp\\cmake_install.cmake"
+    - name: "Execute"
+      args:
+        - "cmd /c del .\\ObfTasks\\native\\cpp\\cpp\\*.vcxproj*"
+    - name: "Execute"
+      args:
+        - "cmd /c copy .\\ObfTasks\\SecureEngineCustomVMs_VC_inline.h .\\ObfTasks\\native\\cpp\\cpp\\SecureEngineCustomVMs_VC_inline.h"
+    - name: "Execute"
+      args:
+        - "cmd /c \"cd .\\ObfTasks\\native\\cpp\\cpp && cmake -A win32 .\""
+    - name: "Execute"
+      args:
+        - "cmd /c \"cd .\\ObfTasks\\native\\cpp\\cpp && cmake --build . --config Release\""
+    - name: "CheckFile"
+      args:
+        - "./EnsembleAntiCheat-1.0-eskid-native.jar"
+    - name: "CheckFile"
+      args:
+        - "./ObfTasks/native/cpp/cpp/build/lib/Release/native_library_static.lib"
+    - name: "Execute"
+      args:
+        - "cmd /c copy .\\ObfTasks\\native\\cpp\\cpp\\build\\lib\\Release\\native_library_static.lib .\\EACDLL\\native_library_static_86.lib"
+    - name: "CheckFile"
+      args:
+        - "./EnsembleAntiCheat-1.0-eskid-native.jar"
+    - name: "Export"
+      args:
+        - "./EnsembleAntiCheat-1.0-eskid-native.jar"
+        - "./EACDLL/export.h"
+    - name: "RemoveAnnotation"
+      args:
+        - "./EnsembleAntiCheat-1.0-eskid-native.jar"
+    - name: "Execute"
+      args:
+        - "cmd /c msbuild ./EACDLL/EACDLL.vcxproj -p:Configuration=Release -p:Platform=x64 -maxcpucount:4"
+    - name: "CheckFile"
+      args:
+        - "./EACDLL/x64/Release/EACDLL.dll"
+    - name: "Execute"
+      args:
+        - "cmd /c copy .\\EACDLL\\x64\\Release\\EACDLL.dll .\\EACDLL.dll"
+    - name: "Execute"
+      args:
+        - "cmd /c msbuild ./EACDLL/EACDLL.vcxproj -p:Configuration=Release -p:Platform=win32 -maxcpucount:4"
+    - name: "CheckFile"
+      args:
+        - "./EACDLL/Release/EACDLL.dll"
+    - name: "Execute"
+      args:
+        - "cmd /c copy .\\EACDLL\\Release\\EACDLL.dll .\\EACDLL_x86.dll"
+    - name: "Print"
+      args:
+        - "WARN!  build succeed. PLEASE ADD ANOTHER PROTECT MANUALLY"

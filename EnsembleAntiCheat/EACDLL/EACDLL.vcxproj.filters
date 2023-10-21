@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\ThemidaSDK">
+      <UniqueIdentifier>{e806df93-9734-461b-8608-92d7c1298223}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Detours">
+      <UniqueIdentifier>{63c8572b-2522-4031-878d-7fd1184c6c89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Java">
+      <UniqueIdentifier>{1e0001ac-c76f-451c-b2ea-81e3556ce687}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\JavaNativeInterface">
+      <UniqueIdentifier>{d94e4937-7c88-4410-a238-4e4431c874df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Utils">
+      <UniqueIdentifier>{6ec03161-bed7-42d3-a9b3-848f627bfedf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\WindowsAPI">
+      <UniqueIdentifier>{5504bb61-a15f-454e-b28b-50c26ec8d208}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Obfuscate">
+      <UniqueIdentifier>{b4c93e7f-06ed-4cce-98e0-a8276a5cf98d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ThemidaSDK.h">
+      <Filter>头文件\ThemidaSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SecureEngineCustomVMs.h">
+      <Filter>头文件\ThemidaSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="detours.h">
+      <Filter>头文件\Detours</Filter>
+    </ClInclude>
+    <ClInclude Include="jvmti.h">
+      <Filter>头文件\Java</Filter>
+    </ClInclude>
+    <ClInclude Include="jni_md.h">
+      <Filter>头文件\Java</Filter>
+    </ClInclude>
+    <ClInclude Include="jni.h">
+      <Filter>头文件\Java</Filter>
+    </ClInclude>
+    <ClInclude Include="pub_ensemble_hillo_EACMain.h">
+      <Filter>头文件\JavaNativeInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="ByteBuf.h">
+      <Filter>头文件\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Authentication.h">
+      <Filter>头文件\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="md5.h">
+      <Filter>头文件\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="EACStatus.h">
+      <Filter>头文件\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="CRC32.h">
+      <Filter>头文件\Utils</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="md5.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="EACStatus.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="detours_x64.lib">
+      <Filter>资源文件</Filter>
+    </Library>
+    <Library Include="detours_x86.lib">
+      <Filter>资源文件</Filter>
+    </Library>
+    <Library Include="SecureEngineSDK32.lib">
+      <Filter>资源文件</Filter>
+    </Library>
+    <Library Include="SecureEngineSDK64.lib">
+      <Filter>资源文件</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="process_util.h">
+      <Filter>头文件\Utils</Filter>
+    </None>
+  </ItemGroup>
+</Project>

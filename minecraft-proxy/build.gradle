@@ -1,0 +1,67 @@
+plugins {
+    id 'java'
+}
+
+group 'al.nya'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = targetCompatibility = '1.8'
+compileJava.options.encoding = 'UTF-8'
+
+repositories {
+    mavenCentral()
+}
+
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+
+    compileOnly 'org.projectlombok:lombok:1.18.28'
+    annotationProcessor 'org.projectlombok:lombok:1.18.28'
+
+    testCompileOnly 'org.projectlombok:lombok:1.18.28'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.28'
+
+    // https://mvnrepository.com/artifact/org.fusesource.jansi/jansi
+    implementation  'org.fusesource.jansi:jansi:2.4.0'
+    // https://mvnrepository.com/artifact/io.netty/netty-all
+    implementation  'io.netty:netty-all:4.1.94.Final'
+    // https://mvnrepository.com/artifact/commons-cli/commons-cli
+    implementation  'commons-cli:commons-cli:1.5.0'
+    // https://mvnrepository.com/artifact/com.google.code.gson/gson
+    implementation 'com.google.code.gson:gson:2.10.1'
+
+}
+
+allprojects {
+    repositories {
+        maven { url 'https://maven.aliyun.com/repository/central' }
+    }
+}
+
+configurations {
+    runtimeClasspath {
+        extendsFrom implementation
+    }
+}
+
+build{
+    tasks.withType(JavaCompile) {
+        options.encoding = 'UTF-8'
+    }
+}
+
+jar{
+    manifest {
+        attributes 'Main-Class': 'al.nya.proxy.Main'
+    }
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+    duplicatesStrategy = 'exclude'
+}
+
+test {
+    useJUnitPlatform()
+}

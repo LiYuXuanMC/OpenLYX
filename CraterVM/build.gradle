@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+}
+
+group 'dev.qingwan'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+
+    //Lombok
+    compileOnly 'org.projectlombok:lombok:1.18.26'
+    annotationProcessor 'org.projectlombok:lombok:1.18.26'
+    testCompileOnly 'org.projectlombok:lombok:1.18.26'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.26'
+
+    // https://mvnrepository.com/artifact/org.ow2.asm/asm
+    implementation 'org.ow2.asm:asm:9.4'
+    // https://mvnrepository.com/artifact/org.ow2.asm/asm-tree
+    implementation 'org.ow2.asm:asm-tree:9.4'
+
+}
+
+test {
+    useJUnitPlatform()
+}

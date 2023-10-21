@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+group 'dev.vector'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+
+    // https://mvnrepository.com/artifact/org.ow2.asm/asm
+    implementation 'org.ow2.asm:asm:9.5'
+    // https://mvnrepository.com/artifact/org.ow2.asm/asm-tree
+    implementation 'org.ow2.asm:asm-tree:9.5'
+    // https://mvnrepository.com/artifact/org.ow2.asm/asm-commons
+    implementation 'org.ow2.asm:asm-commons:9.5'
+}
+
+test {
+    useJUnitPlatform()
+}

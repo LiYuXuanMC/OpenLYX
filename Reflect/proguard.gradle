@@ -1,0 +1,34 @@
+buildscript {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        google()
+    }
+    dependencies {
+        classpath 'com.guardsquare:proguard-gradle:7.0.1'
+    }
+}
+
+// Define a ProGuard task.
+
+task ('proguard', type: proguard.gradle.ProGuardTask) {
+
+    verbose
+
+    injars  '/build/libs/Reflect-Inject-1.0-SNAPSHOT-all.jar'
+    outjars '/build/libs/Reflect-Inject-1.0-SNAPSHOT-all-obf.jar'
+
+    // Automatically handle the Java version of this build.
+    if (System.getProperty('java.version').startsWith('1.')) {
+        // Before Java 9, the runtime classes were packaged in a single jar file.
+        libraryjars "${System.getProperty('java.home')}/lib/rt.jar"
+    } else {
+        // As of Java 9, the runtime classes are packaged in modular jmod files.
+        libraryjars "${System.getProperty('java.home')}/jmods/java.base.jmod", jarfilter: '!**.jar', filter: '!module-info.class'
+        libraryjars "${System.getProperty('java.home')}/jmods/java.sql.jmod", jarfilter: '!**.jar', filter: '!module-info.class'
+        //libraryjars "${System.getProperty('java.home')}/jmods/....."
+    }
+
+
+    printmapping 'proguard.map'
+}

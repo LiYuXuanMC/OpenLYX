@@ -1,0 +1,6 @@
+/.gradle/
+/.idea/
+/build/
+/Reflect-Native/.vs/
+/Reflect-Native/x64/
+/Reflect-Native/classes.h

@@ -1,0 +1,133 @@
+In class al.nya.ReflectAntiLeak.aI
+    in method public void a(al.nya.ReflectAntiLeak.l)
+        java.lang.Class.getName()
+In class al.nya.ReflectAntiLeak.aa
+    in method private static synthetic void a(java.util.List, java.lang.reflect.Method)
+        java.lang.reflect.Method.getName()
+        java.lang.reflect.Method.getName()
+In class al.nya.ReflectAntiLeak.cK
+    in method protected java.lang.String c(java.lang.String, java.lang.String)
+        java.lang.Class.getName()
+        java.lang.Class.forName(java.lang.String, boolean, java.lang.ClassLoader)
+        java.lang.Class.forName(java.lang.String, boolean, java.lang.ClassLoader)
+In class al.nya.ReflectAntiLeak.cM
+    in method static void a(java.lang.Object)
+        java.lang.Class.getName()
+In class al.nya.ReflectAntiLeak.cy
+    in method public void g()
+        java.lang.Class.getName()
+    in method private boolean r()
+        java.lang.Class.getName()
+In class al.nya.ReflectAntiLeak.dg
+    in method public static java.lang.String b(java.lang.Class)
+        java.lang.Class.getName()
+In class al.nya.ReflectAntiLeak.dt
+    in method public static al.nya.ReflectAntiLeak.dt a(java.lang.reflect.Method)
+        java.lang.reflect.Method.getName()
+In class al.nya.ReflectAntiLeak.eB
+    in method protected java.lang.Class f(al.nya.ReflectAntiLeak.dg)
+        java.lang.Class.forName(java.lang.String, boolean, java.lang.ClassLoader)
+        java.lang.Class.forName(java.lang.String, boolean, java.lang.ClassLoader)
+In class al.nya.ReflectAntiLeak.fA
+    in method public byte[] a(byte[])
+        java.lang.reflect.Method.getName()
+In class al.nya.ReflectAntiLeak.fB
+    in method public byte[] a(byte[])
+        java.lang.reflect.Method.getName()
+        java.lang.reflect.Method.getName()
+        java.lang.reflect.Method.getName()
+        java.lang.reflect.Method.getName()
+        java.lang.reflect.Method.getName()
+        java.lang.reflect.Method.getName()
+In class al.nya.ReflectAntiLeak.fC
+    in method public byte[] a(byte[])
+        java.lang.reflect.Method.getName()
+        java.lang.reflect.Method.getName()
+        java.lang.reflect.Method.getName()
+        java.lang.reflect.Method.getName()
+In class al.nya.ReflectAntiLeak.fD
+    in method public byte[] a(byte[])
+        java.lang.reflect.Method.getName()
+        java.lang.reflect.Method.getName()
+        java.lang.reflect.Method.getName()
+        java.lang.reflect.Method.getName()
+        java.lang.reflect.Field.getName()
+In class al.nya.ReflectAntiLeak.fE
+    in method public byte[] a(byte[])
+        java.lang.reflect.Method.getName()
+        java.lang.reflect.Method.getName()
+In class al.nya.ReflectAntiLeak.fG
+    in method public byte[] a(byte[])
+        java.lang.reflect.Method.getName()
+In class al.nya.ReflectAntiLeak.fH
+    in method public byte[] a(byte[])
+        java.lang.reflect.Method.getName()
+In class al.nya.ReflectAntiLeak.fJ
+    in method public byte[] a(byte[])
+        java.lang.reflect.Method.getName()
+        java.lang.reflect.Method.getName()
+        java.lang.reflect.Method.getName()
+        java.lang.reflect.Method.getName()
+In class al.nya.ReflectAntiLeak.fK
+    in method public byte[] a(byte[])
+        java.lang.reflect.Method.getName()
+        java.lang.reflect.Method.getName()
+In class al.nya.ReflectAntiLeak.fL
+    in method public byte[] a(byte[])
+        java.lang.reflect.Method.getName()
+        java.lang.reflect.Method.getName()
+        java.lang.reflect.Method.getName()
+In class al.nya.ReflectAntiLeak.fM
+    in method public byte[] a(byte[])
+        java.lang.reflect.Method.getName()
+In class al.nya.ReflectAntiLeak.fO
+    in method public static void a()
+        java.lang.Class.getDeclaredField(java.lang.String)
+In class al.nya.ReflectAntiLeak.fd
+    in method public java.lang.Class a(java.lang.String)
+        java.lang.ClassLoader.loadClass(java.lang.String)
+    in method private al.nya.ReflectAntiLeak.fh b(java.lang.String)
+        java.lang.Class.forName(java.lang.String)
+        java.lang.Class.forName(java.lang.String)
+In class al.nya.ReflectAntiLeak.fx
+    in method public byte[] a(byte[])
+        java.lang.reflect.Method.getName()
+In class al.nya.ReflectAntiLeak.fy
+    in method public byte[] a(byte[])
+        java.lang.reflect.Method.getName()
+        java.lang.reflect.Method.getName()
+        java.lang.reflect.Method.getName()
+        java.lang.reflect.Method.getName()
+        java.lang.reflect.Field.getName()
+        java.lang.reflect.Field.getName()
+        java.lang.reflect.Field.getName()
+        java.lang.reflect.Field.getName()
+        java.lang.reflect.Field.getName()
+        java.lang.reflect.Field.getName()
+In class al.nya.ReflectAntiLeak.ha
+    in method private static void a(al.nya.ReflectAntiLeak.hl, al.nya.ReflectAntiLeak.hg, java.lang.reflect.Field)
+        java.lang.Class.getConstructors()
+        java.lang.Class.getConstructor(java.lang.Class[])
+    in method private static java.lang.reflect.Field b(al.nya.ReflectAntiLeak.fe)
+        java.lang.reflect.Field.getName()
+        java.lang.reflect.Field.getName()
+    in method private static java.lang.reflect.Method d(al.nya.ReflectAntiLeak.fe)
+        java.lang.Class.getDeclaredMethod(java.lang.String, java.lang.Class[])
+    in method private static void f()
+        java.lang.Class.getConstructor(java.lang.Class[])
+In class al.nya.ReflectAntiLeak.hc
+    in method public static al.nya.ReflectAntiLeak.iq a(al.nya.ReflectAntiLeak.ht)
+        java.lang.Class.getConstructor(java.lang.Class[])
+    in method public static al.nya.ReflectAntiLeak.iq b(al.nya.ReflectAntiLeak.ht)
+        java.lang.Class.getConstructor(java.lang.Class[])
+    in method public static byte[] a(java.lang.Class, java.lang.String)
+        java.lang.reflect.Method.getName()
+        java.lang.reflect.Method.getName()
+        java.lang.reflect.Method.getName()
+        java.lang.reflect.Method.getName()
+        java.lang.reflect.Method.getName()
+        java.lang.reflect.Method.getName()
+        java.lang.reflect.Method.getName()
+In class al.nya.ReflectAntiLeak.he
+    in method public static java.lang.Object a(java.lang.Class, java.lang.Object[])
+        java.lang.Class.getConstructor(java.lang.Class[])

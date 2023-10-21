@@ -1,0 +1,8 @@
+Input: '.\native-code\Reflect-Inject-1.0-SNAPSHOT-all-obf.jar'
+Output: '.\build\libs\Reflect-Inject-1.0-SNAPSHOT-all-obf-obf.jar'
+LibraryDir: './libs'
+ChangeSource: Funny
+NameObfuscation: None
+NameObfDictionary: alphanumeric
+StringEncryption: NativeConst
+NativeCodeOutput: './Reflect-Native'

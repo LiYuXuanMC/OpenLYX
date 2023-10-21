@@ -1,0 +1,41 @@
+plugins {
+    id 'com.github.johnrengelman.shadow' version '7.1.2'
+    id 'java'
+}
+
+group 'al.nya'
+version '1.0-SNAPSHOT'
+compileJava.options.encoding = 'UTF-8'
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    // https://mvnrepository.com/artifact/org.lwjgl/lwjgl
+    compileOnly 'org.lwjgl:lwjgl:3.3.1'
+    // https://mvnrepository.com/artifact/org.lwjgl.lwjgl/lwjgl_util
+    compileOnly 'org.lwjgl.lwjgl:lwjgl_util:2.9.3'
+    // https://mvnrepository.com/artifact/com.google.code.gson/gson
+    compileOnly 'com.google.code.gson:gson:2.9.0'
+    // https://mvnrepository.com/artifact/io.netty/netty-all
+    compileOnly 'io.netty:netty-all:5.0.0.Alpha2'
+    // https://mvnrepository.com/artifact/net.java.dev.jna/jna/3.4.0
+    compileOnly 'net.java.dev.jna:jna:3.4.0'
+    //Project Lombok
+    compileOnly 'org.projectlombok:lombok:1.18.24'
+    annotationProcessor 'org.projectlombok:lombok:1.18.24'
+
+    testCompileOnly 'org.projectlombok:lombok:1.18.24'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.24'
+
+    //compileOnly 'com.github.radioegor146.native-obfuscator:annotations:master-SNAPSHOT'
+    // https://mvnrepository.com/artifact/com.google.code.gson/gson
+    testImplementation 'com.google.code.gson:gson:2.9.0'
+    testImplementation fileTree(dir: 'libs', include: ['*.jar'])
+}
+test {
+    useJUnitPlatform()
+}

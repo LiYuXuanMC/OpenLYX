@@ -1,0 +1,222 @@
+[2022.09.18 15:22:30] Using "C:\Program Files\Zulu\zulu-8\jre\lib\resources.jar;C:\Program Files\Zulu\zulu-8\jre\lib\rt.jar;C:\Program Files\Zulu\zulu-8\jre\lib\jsse.jar;C:\Program Files\Zulu\zulu-8\jre\lib\jce.jar;C:\Program Files\Zulu\zulu-8\jre\lib\charsets.jar;C:\Program Files\Zulu\zulu-8\jre\lib\jfr.jar;C:\Program Files\Zulu\zulu-8\jre\lib\cat.jar" as path to java.lang.Object (D)
+[2022.09.18 15:22:30] Zelix KlassMaster 17.0.3
+                      Racel Build
+                      Lifetime Class Master
+                      Cracked by Racel
+                      Copyright 1997-2021 Zelix Pty Ltd (47 078 740 093)
+                      All rights reserved
+[2022.09.18 15:22:30] Preprocessing ZKM Script file "E:\IdeaProjects\Reflect-Inject\Reflect-Obf\script.txt"
+[2022.09.18 15:22:30] Parsing ZKM Script file "E:\IdeaProjects\Reflect-Inject\Reflect-Obf\script.txt"
+[2022.09.18 15:22:31] Setting classpath to "E:\IdeaProjects\Reflect-Inject\Reflect-Obf\ZKM.jar;C:\Program Files\Java\jre1.8.0_321\lib\resources.jar;C:\Program Files\Java\jre1.8.0_321\lib\rt.jar;C:\Program Files\Java\jre1.8.0_321\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_321\lib\jce.jar;C:\Program Files\Java\jre1.8.0_321\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_321\lib\jfr.jar;E:\IdeaProjects\Reflect-Inject\Reflect-Obf\jars\gson-2.8.0.jar;E:\IdeaProjects\Reflect-Inject\Reflect-Obf\jars\lwjgl-2.9.4-nightly-20150209.jar;E:\IdeaProjects\Reflect-Inject\Reflect-Obf\jars\lwjgl-opengl-3.2.2.jar;E:\IdeaProjects\Reflect-Inject\Reflect-Obf\jars\lwjgl_util-2.9.4-nightly-20150209.jar;E:\IdeaProjects\Reflect-Inject\Reflect-Obf\jars\netty-all-4.1.25.Final.jar;E:\IdeaProjects\Reflect-Inject\Reflect-Obf\jars\guava-17.0.jar"
+[2022.09.18 15:22:32] Opening classes...
+API calls detected that may not be handled automatically...
+In class al.nya.ReflectAntiLeak.aw
+    in method private static synthetic void a(java.util.List, java.lang.reflect.Method)
+        java.lang.reflect.Method.getName()
+        java.lang.reflect.Method.getName()
+In class al.nya.ReflectAntiLeak.ax
+    in method public static al.nya.ReflectAntiLeak.aw c(java.lang.Class)
+        java.lang.Class.getName()
+In class al.nya.ReflectAntiLeak.bA
+    in method public void a(al.nya.ReflectAntiLeak.s)
+        java.lang.Class.getName()
+In class al.nya.ReflectAntiLeak.bI
+    in method public void b_()
+        java.lang.Class.getConstructor(java.lang.Class[])
+In class al.nya.ReflectAntiLeak.bQ
+    in method public void b_()
+        java.lang.Class.getConstructor(java.lang.Class[])
+In class al.nya.ReflectAntiLeak.cq
+    in method public void b()
+        java.lang.Class.getDeclaredField(java.lang.String)
+        java.lang.Class.getDeclaredField(java.lang.String)
+        java.lang.Class.forName(java.lang.String)
+        java.lang.Class.forName(java.lang.String)
+    in method public static void g()
+        java.lang.Class.getDeclaredMethod(java.lang.String, java.lang.Class[])
+    in method public static int h()
+        java.lang.Class.getDeclaredMethod(java.lang.String, java.lang.Class[])
+In class al.nya.ReflectAntiLeak.cy
+    in method private void a(java.net.URI)
+        java.lang.Class.forName(java.lang.String)
+        java.lang.Class.getMethod(java.lang.String, java.lang.Class[])
+        java.lang.Class.getMethod(java.lang.String, java.lang.Class[])
+In class al.nya.ReflectAntiLeak.dU
+    in method public void g()
+        java.lang.Class.getName()
+    in method private boolean r()
+        java.lang.Class.getName()
+In class al.nya.ReflectAntiLeak.eC
+    in method public static java.lang.String b(java.lang.Class)
+        java.lang.Class.getName()
+In class al.nya.ReflectAntiLeak.eP
+    in method public static al.nya.ReflectAntiLeak.eP a(java.lang.reflect.Method)
+        java.lang.reflect.Method.getName()
+In class al.nya.ReflectAntiLeak.eg
+    in method protected java.lang.String c(java.lang.String, java.lang.String)
+        java.lang.Class.getName()
+        java.lang.Class.forName(java.lang.String, boolean, java.lang.ClassLoader)
+        java.lang.Class.forName(java.lang.String, boolean, java.lang.ClassLoader)
+In class al.nya.ReflectAntiLeak.ei
+    in method static void a(java.lang.Object)
+        java.lang.Class.getName()
+In class al.nya.ReflectAntiLeak.fX
+    in method protected java.lang.Class f(al.nya.ReflectAntiLeak.eC)
+        java.lang.Class.forName(java.lang.String, boolean, java.lang.ClassLoader)
+        java.lang.Class.forName(java.lang.String, boolean, java.lang.ClassLoader)
+In class al.nya.ReflectAntiLeak.gz
+    in method public java.lang.Class a(java.lang.String)
+        java.lang.ClassLoader.loadClass(java.lang.String)
+    in method private al.nya.ReflectAntiLeak.gE b(java.lang.String)
+        java.lang.Class.forName(java.lang.String)
+        java.lang.Class.forName(java.lang.String)
+In class al.nya.ReflectAntiLeak.hE
+    in method public byte[] a(byte[])
+        java.lang.reflect.Method.getName()
+In class al.nya.ReflectAntiLeak.hG
+    in method public static void a()
+        java.lang.Class.getDeclaredField(java.lang.String)
+    in method private static boolean a(java.lang.String)
+        java.lang.Class.getDeclaredMethod(java.lang.String, java.lang.Class[])
+    in method private static void d()
+        java.lang.ClassLoader.loadClass(java.lang.String)
+        java.lang.Class.getDeclaredField(java.lang.String)
+        java.lang.Class.getDeclaredMethod(java.lang.String, java.lang.Class[])
+    in method static 
+        java.lang.Class.forName(java.lang.String)
+        java.lang.Class.getDeclaredField(java.lang.String)
+In class al.nya.ReflectAntiLeak.hO
+    in method static 
+        java.lang.Class.getDeclaredMethod(java.lang.String, java.lang.Class[])
+        java.lang.Class.getDeclaredMethod(java.lang.String, java.lang.Class[])
+        java.lang.Class.getDeclaredMethod(java.lang.String, java.lang.Class[])
+        java.lang.Class.getDeclaredMethod(java.lang.String, java.lang.Class[])
+        java.lang.Class.getDeclaredMethod(java.lang.String, java.lang.Class[])
+        java.lang.Class.forName(java.lang.String)
+In class al.nya.ReflectAntiLeak.hP
+    in method static 
+        java.lang.Class.getDeclaredMethod(java.lang.String, java.lang.Class[])
+        java.lang.Class.getDeclaredMethod(java.lang.String, java.lang.Class[])
+        java.lang.Class.getDeclaredMethod(java.lang.String, java.lang.Class[])
+        java.lang.Class.getDeclaredMethod(java.lang.String, java.lang.Class[])
+        java.lang.Class.getDeclaredMethod(java.lang.String, java.lang.Class[])
+        java.lang.Class.forName(java.lang.String)
+In class al.nya.ReflectAntiLeak.hZ
+    in method public static boolean a()
+        java.lang.Class.forName(java.lang.String)
+    in method public static java.lang.Class a(byte[])
+        java.lang.Class.getDeclaredMethod(java.lang.String, java.lang.Class[])
+    in method public static void b()
+        java.lang.Class.getDeclaredMethod(java.lang.String, java.lang.Class[])
+        java.lang.Class.forName(java.lang.String)
+In class al.nya.ReflectAntiLeak.hn
+    in method public java.lang.Class a()
+        java.lang.Class.forName(java.lang.String)
+In class al.nya.ReflectAntiLeak.ia
+    in method public static boolean a()
+        java.lang.Class.forName(java.lang.String)
+        java.lang.Class.forName(java.lang.String)
+In class al.nya.ReflectAntiLeak.ib
+    in method public static boolean b()
+        java.lang.Class.forName(java.lang.String)
+    in method public static boolean c()
+        java.lang.Class.forName(java.lang.String)
+    in method public static boolean d()
+        java.lang.Class.getDeclaredField(java.lang.String)
+        java.lang.Class.forName(java.lang.String)
+In class al.nya.ReflectAntiLeak.ic
+    in method public static java.lang.Class a()
+        java.lang.Class.forName(java.lang.String)
+    in method public static boolean b()
+        java.lang.Class.forName(java.lang.String)
+In class al.nya.ReflectAntiLeak.id
+    in method public static java.lang.Class b()
+        java.lang.Class.forName(java.lang.String)
+    in method public static java.lang.Class c()
+        java.lang.Class.forName(java.lang.String)
+    in method public static java.lang.Class d()
+        java.lang.Class.forName(java.lang.String)
+    in method public static java.lang.Enum e()
+        java.lang.Class.forName(java.lang.String)
+    in method public static java.lang.Class f()
+        java.lang.Class.forName(java.lang.String)
+    in method public static void h()
+        java.lang.Class.forName(java.lang.String)
+        java.lang.Class.forName(java.lang.String)
+        java.lang.Class.getDeclaredField(java.lang.String)
+        java.lang.Class.getDeclaredField(java.lang.String)
+In class al.nya.ReflectAntiLeak.ie
+    in method private static java.util.Map e()
+        java.lang.reflect.Field.getName()
+        java.lang.reflect.Field.getName()
+        java.lang.Class.getName()
+    in method public static java.lang.Class c()
+        java.lang.Class.forName(java.lang.String)
+    in method public static java.lang.Class d()
+        java.lang.Class.forName(java.lang.String)
+In class al.nya.ReflectAntiLeak.if
+    in method public static boolean a()
+        java.lang.Class.forName(java.lang.String)
+    in method public static java.lang.Class b()
+        java.lang.Class.forName(java.lang.String)
+    in method public static java.lang.Class c()
+        java.lang.Class.forName(java.lang.String)
+    in method public static void d()
+        java.lang.Class.getDeclaredField(java.lang.String)
+In class al.nya.ReflectAntiLeak.jK
+    in method static 
+        java.lang.Class.forName(java.lang.String)
+        java.lang.Class.getDeclaredField(java.lang.String)
+        java.lang.Class.getDeclaredField(java.lang.String)
+In class al.nya.ReflectAntiLeak.jo
+    in method private static void a(al.nya.ReflectAntiLeak.jA, al.nya.ReflectAntiLeak.jv, java.lang.reflect.Field)
+        java.lang.Class.getConstructor(java.lang.Class[])
+        java.lang.Class.getConstructors()
+    in method private static java.lang.Class b(java.lang.String)
+        java.lang.Class.forName(java.lang.String)
+    in method private static void a(al.nya.ReflectAntiLeak.jA, java.lang.Class, al.nya.ReflectAntiLeak.jz, java.lang.reflect.Field)
+        java.lang.Class.getName()
+        java.lang.Class.getConstructor(java.lang.Class[])
+    in method private static java.lang.reflect.Field a(java.lang.Class, java.lang.String)
+        java.lang.reflect.Field.getName()
+        java.lang.reflect.Field.getName()
+    in method private static java.lang.reflect.Method a(java.lang.Class, java.lang.String, java.lang.Class[])
+        java.lang.reflect.Method.getName()
+        java.lang.reflect.Method.getName()
+    in method private static void g()
+        java.lang.Class.getConstructor(java.lang.Class[])
+        java.lang.Class.getConstructor(java.lang.Class[])
+        java.lang.Class.getDeclaredField(java.lang.String)
+In class al.nya.ReflectAntiLeak.jq
+    in method public static al.nya.ReflectAntiLeak.kX a(al.nya.ReflectAntiLeak.jI)
+        java.lang.Class.getConstructor(java.lang.Class[])
+    in method public static al.nya.ReflectAntiLeak.kX b(al.nya.ReflectAntiLeak.jI)
+        java.lang.Class.getConstructor(java.lang.Class[])
+    in method public static byte[] a(java.lang.Class, java.lang.String)
+        java.lang.reflect.Method.getName()
+        java.lang.reflect.Method.getName()
+        java.lang.reflect.Method.getName()
+        java.lang.reflect.Method.getName()
+        java.lang.reflect.Method.getName()
+        java.lang.reflect.Method.getName()
+        java.lang.reflect.Method.getName()
+        java.lang.reflect.Method.getName()
+In class al.nya.ReflectAntiLeak.js
+    in method public static java.lang.Object a(java.lang.Class, java.lang.Object[])
+        java.lang.Class.getConstructor(java.lang.Class[])
+    in method public static java.lang.Object a(java.lang.String, java.lang.String, java.lang.Object, java.lang.Object[])
+        java.lang.reflect.Method.getName()
+        java.lang.Class.forName(java.lang.String)
+    in method public static java.lang.Object a(java.lang.String, java.lang.String, java.lang.Object)
+        java.lang.Class.forName(java.lang.String)
+        java.lang.reflect.Field.getName()
+
+990 classes opened in 4 seconds. 122842K of memory used. 471589K of memory free.
+
+[2022.09.18 15:22:36] Setting exclusions...
+[2022.09.18 15:22:37] Obfuscating classes...
+	Using internal default exclusions. File 'E:\IdeaProjects\Reflect-Inject\Reflect-Obf\defaultExclude.txt' not found
+MESSAGE: Obfuscating control flow in only one or two methods in each class
+[2022.09.18 15:22:54] Saving 990 classes in "E:\IdeaProjects\Reflect-Inject\Reflect-Obf\output"
+WARNING: File 'E:\IdeaProjects\Reflect-Inject\Reflect-Obf\output\Reflect-Inject-1.0-SNAPSHOT-all-obf-obf.jar' already exists in 'E:\IdeaProjects\Reflect-Inject\Reflect-Obf\output'. Renaming to 'E:\IdeaProjects\Reflect-Inject\Reflect-Obf\output\Reflect-Inject-1.0-SNAPSHOT-all-obf-obf.jar.BACKUP'. 
+[2022.09.18 15:22:57] Terminating normally.

@@ -1,0 +1,21 @@
+# Default ignored files
+/.idea/
+/.gradle/
+/build/
+classes.h
+modid-1.0(1).jar
+modid-1.0.jar
+output.tsrg
+reflect.dll
+Reflect-Inject-1.0-SNAPSHOT-all.jar
+/Map-Convert/build/
+/Map-Convert/.idea
+/Map-Convert/.gradle
+/Reflect-Native/x64
+/Reflect-Native/minhook-master
+/Reflect-Native/.vs
+/Reflect-Injector
+/Reflect-Obf/output
+/Reflect-Obf/ChangeLog.txt
+/debug
+/Reflect-Native-Test
